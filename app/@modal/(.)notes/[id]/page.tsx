@@ -28,25 +28,3 @@ async function NotePreview({ params }: NotePreviewProps) {
 }
 
 export default NotePreview;
-
-// type NoteDetailsProps = {
-//   readonly params: Promise<{ id: string }>;
-// };
-
-// async function Note({ params }: NoteDetailsProps) {
-//   const { id } = await params;
-//   const queryClient = new QueryClient();
-
-//   queryClient.prefetchQuery({
-//     queryKey: ["note", id],
-//     queryFn: () => getNoteById(id),
-//   });
-
-//   return (
-//     <HydrationBoundary state={dehydrate(queryClient)}>
-//       <NotePreviewClient />
-//     </HydrationBoundary>
-//   );
-// }
-
-// export default Note;

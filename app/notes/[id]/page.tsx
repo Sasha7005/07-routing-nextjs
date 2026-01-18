@@ -9,7 +9,6 @@ import NoteDetailsClient from "./NoteDetails.client";
 type NoteDetailsProps = {
   readonly params: Promise<{ id: string }>;
 };
-
 async function Note({ params }: NoteDetailsProps) {
   const { id } = await params;
   const queryClient = new QueryClient();
