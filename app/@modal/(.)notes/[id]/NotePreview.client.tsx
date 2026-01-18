@@ -37,6 +37,10 @@ export default function NotePreviewClient() {
           </div>
           <p className={css.content}>{note.content}</p>
           <p className={css.date}>{formattedDate}</p>
+          <p className={css.tag}>{note.tag}</p>
+          <button className={css.backBtn} type="button" onClick={closeModal}>
+            Go back
+          </button>
         </div>
       </div>
     </Modal>
