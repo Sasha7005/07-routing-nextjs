@@ -5,7 +5,7 @@ import { useQuery } from "@tanstack/react-query";
 import { useParams, useRouter } from "next/navigation";
 import { getNoteById } from "@/lib/api";
 
-export default function NotePreciewClient() {
+export default function NotePreviewClient() {
   const router = useRouter();
   const closeModal = (): void => {
     router.back();

@@ -1,4 +1,4 @@
-const NoteModal = () => {
+const Modal = () => {
   return null;
 };
-export default NoteModal;
+export default Modal;
